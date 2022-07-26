@@ -1,5 +1,5 @@
 {
-  "name": "mammoth",
+  "name": "@digited-labs/mammoth-math",
   "version": "1.4.17",
   "author": "Michael Williamson <mike@zwobble.org>",
   "description": "Convert Word documents from docx to simple HTML and Markdown",
@@ -14,7 +14,10 @@
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mwilliamson/mammoth.js.git"
+    "url": "https://github.com/digited-labs/mammoth-math.js.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "argparse": "~1.0.3",
