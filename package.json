@@ -1,6 +1,6 @@
 {
   "name": "@digited-labs/mammoth-math",
-  "version": "1.4.17",
+  "version": "1.4.18",
   "author": "Michael Williamson <mike@zwobble.org>",
   "description": "Convert Word documents from docx to simple HTML and Markdown",
   "keywords": [
@@ -33,14 +33,14 @@
     "xmldom": "^0.6.0"
   },
   "devDependencies": {
-    "browserify": "~13.0.1",
+    "browserify": "~17.0.0",
     "browserify-prepend-licenses": "~1.0.0",
     "duck": "^0.1.12",
     "eslint": "2.13.1",
     "hamjest": "2.13.0",
     "mocha": "~2.2.5",
     "temp": "~0.7.0",
-    "uglify-js": "~2.4.8"
+    "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
   },
   "browser": {
     "./lib/unzip.js": "./browser/unzip.js",
@@ -52,7 +52,7 @@
   "scripts": {
     "pretest": "eslint lib test",
     "test": "mocha 'test/**/*.tests.js'",
-    "prepublish": "make mammoth.browser.min.js"
+    "prepublishOnly": "make mammoth.browser.min.js"
   },
   "license": "BSD-2-Clause"
 }
